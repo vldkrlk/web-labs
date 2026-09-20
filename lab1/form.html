@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Введення товару</title>
+</head>
+
+<body>
+
+    <header>
+        <p><strong>ПІБ студента:</strong> Королюк Владислав Володимирович</p>
+        <p><strong>Номер групи:</strong> АнД-31</p>
+        <p><strong>Номер варіанту:</strong> 12</p>
+        <p><a href="./main.html">На головну сторінку</a></p>
+    </header>
+
+    <h1>Форма введення товару</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Дані про товар</legend>
+
+            <p>
+                <label for="product_name">Назва товару:</label><br>
+                <input type="text" id="product_name" name="product_name" required>
+            </p>
+
+            <p>
+                <label for="product_type">Тип товару:</label><br>
+                <select id="product_type" name="product_type">
+                    <option value="electronics">Електроніка</option>
+                    <option value="clothing">Одяг</option>
+                    <option value="food">Продукти харчування</option>
+                    <option value="furniture">Меблі</option>
+                    <option value="other">Інше</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="production_date">Дата виробництва:</label><br>
+                <input type="date" id="production_date" name="production_date" required>
+            </p>
+
+            <p>
+                <label for="price">Ціна:</label><br>
+                <input type="number" id="price" name="price" min="0" step="0.01" required>
+            </p>
+
+            <p>
+                <label for="quantity">Кількість на складі:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" max="100000" step="1" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Дані про виробника</legend>
+
+            <p>
+                <label for="manufacturer_name">Назва виробника:</label><br>
+                <input type="text" id="manufacturer_name" name="manufacturer_name" required>
+            </p>
+
+            <p>
+                <label for="manufacturer_address">Юридична адреса:</label><br>
+                <input type="text" id="manufacturer_address" name="manufacturer_address" required>
+            </p>
+
+            <p>
+                <label for="manufacturer_email">Електронна пошта:</label><br>
+                <input type="email" id="manufacturer_email" name="manufacturer_email" required>
+            </p>
+
+            <p>
+                <label for="manufacturer_site">Веб-сайт:</label><br>
+                <input type="url" id="manufacturer_site" name="manufacturer_site">
+            </p>
+
+            <p>
+                <label for="manufacturer_comments">Коментарі:</label><br>
+                <textarea id="manufacturer_comments" name="manufacturer_comments" rows="4" cols="40"></textarea>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Додати товар">
+            <input type="reset" value="Очистити форму">
+        </p>
+
+    </form>
+
+</body>
+
+</html>
