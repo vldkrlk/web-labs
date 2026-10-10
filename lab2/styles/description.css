@@ -1,0 +1,25 @@
+@import url("./main.css");
+
+section > p:nth-child(2) {
+    color: rgb(4, 46, 4);
+    text-decoration: underline;
+}
+section > p:nth-child(3) {
+    text-decoration: underline;
+}
+section > p:nth-child(4) span {
+    font-style: italic;
+    color: red;
+}
+
+.image_right {
+    float: right;
+}
+
+.image_left {
+    float: left;
+}
+
+img {
+    margin: 10px;
+}
