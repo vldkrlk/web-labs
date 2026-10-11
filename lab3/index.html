@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+    <header>
+        <div>
+            <span class="logo">A T T E L I E R</span>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">Про нас</a>
+                </li>
+                <li>
+                    <a href="#products">Продукція</a>
+                </li>
+                <li>
+                    <a href="#contacts">Контакти</a>
+                </li>
+                <li>
+                    <a href="#history">Історія</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="header divided-section">
+            <div class="divided-section__sidebar">
+                <h2>Про компанію</h2>
+                <hr>
+                <img src="./images/1.png" alt="">
+                 <p>Ми уважно добираємо матеріали та створюємо кожен виріб невеликими серіями,
+                     щоб зберегти його унікальність і відчуття ручної роботи.</p>
+                <ul>
+                    <li>01  /  Продумана форма</li>
+                    <li>02  /  Увага до деталей</li>
+                    <li>03  /  Речі з характером</li>
+                </ul>
+            </div>
+            <div class="divided-section__main">
+                <h1>Створюємо речі з характером</h1>
+                <p>
+                ATELIER — це поєднання традицій, сучасних технологій і любові до деталей. Ми створюємо вироби, які надихають і залишаються з вами надовго.
+                </p>
+                <button>
+                    Дізнатися більше
+                </button>
+            </div>
+        </section>
+        <section id="products" class="products-section">
+            <h2>Речі для вашого повсякдення</h2>
+            <p>Добірка виробів ATELIER для затишку вдома та щоденних справ.</p>
+
+            <div class="products-grid">
+                <article class="product-card">
+                    <img src="./images/p1.png" alt="Сумка з натуральної шкіри">
+                    <p class="product-card__category">01 / Шкіряні аксесуари</p>
+                    <h3>Сумка з натуральної шкіри</h3>
+                    <hr>
+                    <a href="#">Детальніше →</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="./images/p2.png" alt="Лляний плед">
+                    <p class="product-card__category">02 / Текстиль для дому</p>
+                    <h3>Лляний плед</h3>
+                    <hr>
+                    <a href="#">Детальніше →</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="./images/p3.png" alt="Дерев'яні свічники">
+                    <p class="product-card__category">03 / Деталі інтер'єру</p>
+                    <h3>Дерев'яні свічники</h3>
+                    <hr>
+                    <a href="#">Детальніше →</a>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="contacts" class="contacts-section divided-section">
+            <div class="divided-section__sidebar contacts-sidebar">
+                <h2>Контакти</h2>
+                <hr>
+                <p>Маєте ідею або запитання? Напишіть нам — обговоримо ваш майбутній виріб.</p>
+
+                <dl>
+                    <dt>Email</dt>
+                    <dd>company_email@mail.shop</dd>
+
+                    <dt>Телефон</dt>
+                    <dd>+380999999999</dd>
+
+                    <dt>Майстерня</dt>
+                    <dd>м. Львів, вул Медової печери</dd>
+                </dl>
+            </div>
+
+            <div class="divided-section__main contacts-main">
+                <h2>Напишіть нам</h2>
+                <form action="#" method="post">
+                    <p>
+                        <label for="name">Ваше ім'я</label>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="message">Повідомлення</label>
+                        <textarea id="message" name="message" rows="3" required></textarea>
+                    </p>
+                    <button type="submit">Надіслати повідомлення →</button>
+                </form>
+                <p>Контактні дані — заповніть вашою інформацією.</p>
+            </div>
+        </section>
+        <section id="history" class="history-section divided-section">
+            <div class="divided-section__sidebar history-sidebar">
+                <h2>Кожна річ має свій початок</h2>
+                <hr>
+                <p>Від маленької майстерні до колекцій, створених для сучасного ритму життя.</p>
+            </div>
+
+            <div class="divided-section__main history-main">
+                <div class="history-timeline">
+                    <article class="history-step">
+                        <div class="history-step__number">
+                            <div>01</div>
+                        </div>
+                        <h3>Початок</h3>
+                        <p class="history-step__date">2018</p>
+                        <p>ATELIER почався з ідеї створювати прості та довговічні речі для дому.</p>
+                    </article>
+
+                    <article class="history-step">
+                        <div class="history-step__number">
+                            <div>02</div>
+                        </div>
+                        <h3>Перші вироби</h3>
+                        <p class="history-step__date">2020 / Перша колекція</p>
+                        <p>Ми представили першу колекцію шкіряних аксесуарів і текстилю ручної роботи.</p>
+                    </article>
+
+                    <article class="history-step">
+                        <div class="history-step__number">
+                            <div>03</div>
+                        </div>
+                        <h3>Розвиток</h3>
+                        <p class="history-step__date">2023 / Нова майстерня</p>
+                        <p>Відкрили власну майстерню у Львові та розширили команду майстрів.</p>
+                    </article>
+
+                    <article class="history-step">
+                        <div class="history-step__number">
+                            <div>04</div>
+                        </div>
+                        <h3>Сьогодні</h3>
+                        <p class="history-step__date">2026 / Нові форми</p>
+                        <p>Працюємо над новою колекцією предметів для повсякденного життя.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
