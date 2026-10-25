@@ -3,6 +3,6 @@
 
 body {
     background-image: url("../images/2.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: top;
 }
