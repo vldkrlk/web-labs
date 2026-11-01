@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+}
+
+.header {
+    background: #3a5a80;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.subtitle {
+    margin: 5px 0 10px;
+}
+
+.student-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    background: #ddd;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu a {
+    margin: 0 10px;
+    color: #222;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.task {
+    background: white;
+    border: 1px solid #bbb;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 5px;
+}
+
+button {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.result p {
+    margin: 8px 0;
+    padding: 8px;
+    background: #eee;
+}
+
+.result .warning {
+    background: yellow;
+}
+
+.result .today {
+    background: lightgreen;
+}
+
+.result .expired {
+    background: #ff9999;
+}
+
+.result .note {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+
+.output-text {
+    margin-top: 10px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #333;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+td.third-maximum {
+    background-color: #f6c344;
+}
+
+td.fifth-minimum {
+    background-color: #82d6a5;
+}
+
+.footer {
+    background: #3a5a80;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .menu a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    input[type="text"] {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Лабораторна робота №5 — варіант 2</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="task_1.js" defer></script>
+    <script src="js/lab5_task2.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <h1>Лабораторна робота №5</h1>
+    <p class="subtitle">Об’єкти та масиви. Основи моделі DOM та події</p>
+    <ul class="student-info">
+        <li><b>ПІБ:</b> Королюк Владислав Володимирович </li>
+        <li><b>Група:</b> АнД-31</li>
+        <li><b>Варіант:</b> 12</li>
+    </ul>
+</header>
+
+<nav class="menu">
+    <a href="#task1">Завдання 1</a>
+    <a href="#task21">Завдання 2.1</a>
+    <a href="#task22">Завдання 2.2</a>
+</nav>
+
+<main>
+
+    <!-- ============ ЗАВДАННЯ 1 ============ -->
+    <section id="task1" class="task">
+        <h2>Завдання 1</h2>
+        <p class="description">
+            Створити масиви значень: концертна група чи виконавець; місце проведення
+            концерту (допускається пусте значення); дата проведення концерту.
+            Квиток потрібно придбати за 5 днів до концерту. Вивести повідомлення про те,
+            що сьогодні останній термін придбання квитка, чи сьогодні йде концерт.
+            Якщо не вказано місце проведення концерту, вивести додаткове повідомлення
+            «Невідома адреса проведення концерту».
+        </p>
+
+        <button type="button" id="btnConcerts">Перевірити концерти</button>
+
+        <h3>Результати перевірки концертів</h3>
+        <div id="result" class="result"></div>
+    </section>
+
+    <!-- ============ ЗАВДАННЯ 2.1 ============ -->
+    <section id="task21" class="task">
+        <h2>Завдання 2.1</h2>
+        <p class="description">
+            У поле вводу вводиться країна і натискається Enter. При натисканні на Enter
+            введені країни записуються в абзац під полем вводу через кому. По кожному
+            натисканню Enter в абзац додаються нові й нові країни.
+        </p>
+
+        <label for="countryInput">Країна</label>
+        <input type="text" id="countryInput" placeholder="Наприклад: Україна" autocomplete="off">
+
+        <p id="countriesOutput" class="output-text"></p>
+    </section>
+
+    <!-- ============ ЗАВДАННЯ 2.2 ============ -->
+    <section id="task22" class="task">
+        <h2>Завдання 2.2</h2>
+        <p class="description">
+            Дана таблиця з числами. При натисканні на кнопку знайти та
+            виокремити кольором третє максимальне значення та п’яте мінімальне.
+        </p>
+
+        <div class="table-wrap">
+            <table id="numbersTable">
+                <tr><td>12</td><td>-5</td><td>7</td><td>30</td></tr>
+                <tr><td>3</td><td>18</td><td>-9</td><td>25</td></tr>
+                <tr><td>41</td><td>0</td><td>16</td><td>-2</td></tr>
+                <tr><td>8</td><td>22</td><td>-14</td><td>5</td></tr>
+            </table>
+        </div>
+
+        <button type="button" id="btnNumbers">Знайти числа</button>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>Лабораторна робота №5 · варіант 2</p>
+</footer>
+
+</body>
+</html>
