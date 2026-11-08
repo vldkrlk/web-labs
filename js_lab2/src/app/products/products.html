@@ -1,0 +1,68 @@
+<main class="products-page">
+	<section class="products-panel" aria-labelledby="page-title">
+		<div class="products-intro">
+			<div class="task-description">
+				<h2>Завдання</h2>
+				<p>Базовий клас: Товар (поля: кількість, ціна).</p>
+				<p>Метод: вартість товару.</p>
+				<p>Нащадок: Фломастери (поля: назва, сорт s).</p>
+				<p>Змінити вартість фломастерів з урахуванням сорту в 1 / s раз.</p>
+			</div>
+		</div>
+
+		<form class="product-form">
+			<fieldset>
+				<legend>Основні дані товару</legend>
+
+				<div class="form-grid">
+					<label>
+						<span>Кількість</span>
+						<input type="number" name="quantity" min="1" placeholder="1" [(ngModel)]="quantityField"/>
+					</label>
+
+					<label>
+						<span>Ціна за одиницю</span>
+						<input type="number" name="price" min="0" step="0.01" placeholder="0.00" [(ngModel)]="priceField" />
+					</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Дані фломастера</legend>
+
+				<div class="form-grid">
+					<label class="form-field-wide">
+						<span>Назва</span>
+						<input type="text" name="name" [(ngModel)]="markerNameField"/>
+					</label>
+
+					<label>
+						<span>Сорт <small>s</small></span>
+						<input type="number" name="sort" min="1" step="1" placeholder="1" [(ngModel)]="sortField"/>
+					</label>
+				</div>
+			</fieldset>
+
+			<button (click)="calculatePrices($event)">Розрахувати вартість</button>
+		</form>
+
+		@if (validationMessage) {
+			<p class="validation-message">{{ validationMessage }}</p>
+		}
+
+		<section class="calculation-results" aria-live="polite" aria-labelledby="results-title">
+			<h2 id="results-title">Результати обчислення</h2>
+			<dl>
+				<div>
+					<dt>Вартість товару</dt>
+					<dd id="product-price">{{ productPrice ?? '—' }}</dd>
+				</div>
+				<div>
+					<dt>Ціна фломастера з урахуванням сорту</dt>
+					<dd id="marker-price">{{ markerPrice ?? '—' }}</dd>
+				</div>
+			</dl>
+		</section>
+	</section>
+</main>
+
